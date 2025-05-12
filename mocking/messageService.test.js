@@ -8,7 +8,7 @@ console.log('2. imported mocked dateUtils module', dateUtils);
 const {generateWelcomeMessage} = require('./messageService');
 console.log('3.  Imported the general welcome message from message service');
 //moking
- 
+
 test('should generate welcome message with mocked date', ()=>{
     dateUtils.getFormattedDate.mockReturnValue('April 8, 2025');
 console.log('Mocked getFormattedDate to return 21th April 2025');
